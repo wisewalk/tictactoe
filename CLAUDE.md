@@ -27,7 +27,9 @@ Everything lives in a single file (`index.html`): HTML structure, CSS, and JavaS
 
 ## Git & GitHub workflow
 
-Commits are pushed to `https://github.com/wisewalk/tictactoe`. After every change:
+Commits are pushed to `https://github.com/wisewalk/tictactoe`.
+
+**Commit and push after every meaningful unit of work** — a new feature, a bug fix, a styling change. Do not batch multiple unrelated changes into one commit. This ensures work is never lost and the history is easy to revert.
 
 ```bash
 git add index.html
@@ -35,4 +37,4 @@ git commit -m "short imperative description of what changed"
 git push
 ```
 
-Keep commit messages in the imperative mood ("add AI opponent", not "added AI opponent").
+Keep commit messages in the imperative mood ("add AI opponent", not "added AI opponent"). Each commit should leave the game in a working state.
